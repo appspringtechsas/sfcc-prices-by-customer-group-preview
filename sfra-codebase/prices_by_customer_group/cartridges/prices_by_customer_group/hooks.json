@@ -1,0 +1,16 @@
+{
+    "hooks": [
+        {
+            "name": "dw.ocapi.shop.product_search.beforeGET",
+            "script": "./cartridge/scripts/hooks/pricesByCustomerGroupHook.js"
+        },
+        {
+            "name": "dw.ocapi.shop.product.beforeGET",
+            "script": "./cartridge/scripts/hooks/pricesByCustomerGroupHook.js"
+        },
+        {
+            "name": "dw.system.request.onRequest",
+            "script": "./cartridge/scripts/hooks/pricesByCustomerGroupSFRAHook.js"
+        }
+    ]
+}
